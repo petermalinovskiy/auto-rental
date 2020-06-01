@@ -1,0 +1,45 @@
+.header
+  padding-top: 87px
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo
+  &__img
+    margin-right: 22px
+    vertical-align: middle
+  &__text
+    display: inline-block
+    vertical-align: middle
+    max-width: 224px
+    color: $light
+    font-weight: normal
+    margin: 0
+    span
+      font-size: 30px
+      font-weight: 700
+      color: $white
+.nav
+  &__item
+    color: $light
+    text-decoration: none
+    display: inline-block
+    margin-top: 15px
+    margin-right: 57px
+    &:last-child
+      margin-right: 0
+    &::after
+      content: ''
+      display: block
+      height: 2px
+      background-color: $white
+      transition: 0.3s
+      width: 0%
+      margin: auto
+      margin-top: 15px
+    &:hover
+      color: $white
+      &:after
+        width: 100%
+
+
