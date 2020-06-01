@@ -1,7 +1,42 @@
 @font-face {
-  font-family: 'Myriad Pro';
-  src: url("MyriadPro-Regular.woff") format("woff"), url("MyriadPro-Regular.woff2") format("woff2");
+  font-family: 'Open Sans';
+  src: url("OpenSans-Regular.woff") format("woff"), url("OpenSans-Regular.woff2") format("woff2");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("OpenSans-SemiBold.woff") format("woff"), url("OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Istok Web';
+  src: url("IstokWeb-Regular.woff") format("woff"), url("IstokWeb-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Istok Web';
+  src: url("IstokWeb-Bold.woff") format("woff"), url("IstokWeb-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/MyriadPro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-Bold.woff2") format("woff2"), url("../fonts/MyriadPro-Bold.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
@@ -320,11 +355,12 @@ template {
     max-width: 1690px; }
 
 body {
-  font-family: 'Myriad Pro', sans-serif;
-  font-size: 1rem; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
 
 .header {
-  padding-top: 87px; }
+  padding-top: 87px;
+  margin-bottom: 53px; }
 
 .menu {
   display: flex;
@@ -332,25 +368,34 @@ body {
   align-items: center; }
 
 .logo__img {
-  margin-right: 22px;
+  width: 60px;
+  height: 60px;
+  margin-right: 17px;
   vertical-align: middle; }
 
 .logo__text {
   display: inline-block;
   vertical-align: middle;
-  max-width: 224px;
   color: #dddddd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
   font-weight: normal;
+  line-height: 1.3;
   margin: 0; }
   .logo__text span {
-    font-size: 30px;
-    font-weight: 700;
+    font-family: 'Istok Web', sans-serif;
+    font-size: 34px;
+    font-weight: bold;
     color: #ffffff; }
 
 .nav__item {
   color: #dddddd;
   text-decoration: none;
   display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.35;
   margin-top: 15px;
   margin-right: 57px; }
   .nav__item:last-child {
@@ -371,7 +416,72 @@ body {
 
 .hero {
   background: #222222 url("../img/hero_bg.jpg") no-repeat center/cover;
-  height: 100vh;
-  margin-top: -147px; }
+  padding-bottom: 464px; }
   .hero__content {
-    padding-top: 20vh; }
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 31px; }
+  .hero__title {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 78px;
+    font-weight: bold;
+    line-height: 1.1;
+    max-width: 446px;
+    margin: 0;
+    margin-bottom: 31px; }
+  .hero__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.35;
+    max-width: 256px; }
+
+@media screen and (max-width: 1200px) {
+  .logo__img {
+    width: 55px;
+    height: 55px; }
+  .logo__text {
+    font-size: 14px; }
+    .logo__text span {
+      font-size: 30px; }
+  .nav__item {
+    font-size: 14px;
+    margin-right: 40px; }
+  .hero__title {
+    font-size: 60px;
+    max-width: 350px; }
+  .hero__subtitle {
+    font-size: 20px;
+    max-width: 200px; } }
+
+@media screen and (max-width: 992px) {
+  .logo__img {
+    width: 50px;
+    height: 50px; }
+  .logo__text {
+    font-size: 12px; }
+    .logo__text span {
+      font-size: 25px; }
+  .nav {
+    display: none; }
+  .hero__title {
+    font-size: 45px;
+    max-width: 250px; }
+  .hero__subtitle {
+    font-size: 16px;
+    max-width: 160px; } }
+
+@media screen and (max-width: 575px) {
+  .logo__img {
+    width: 40px;
+    height: 40px; }
+  .logo__text {
+    font-size: 10px; }
+    .logo__text span {
+      font-size: 20px; }
+  .hero__title {
+    font-size: 35px;
+    max-width: 200px; }
+  .hero__subtitle {
+    font-size: 12px;
+    max-width: 120px; } }
