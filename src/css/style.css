@@ -367,6 +367,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  .menu__link {
+    text-decoration: none; }
 
 .logo__img {
   width: 60px;
@@ -549,6 +551,60 @@ body {
   .row .col-70 {
     width: 70%; }
 
+.card__background {
+  background-color: transparent; }
+
+.clients {
+  background-color: #ffffff;
+  padding-top: 145px;
+  padding-bottom: 156px; }
+  .clients__heading {
+    font-family: 'Istok Web', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 35px; }
+  .clients__subheading {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 173px; }
+
+.card {
+  position: relative;
+  padding-top: 42px;
+  padding-left: 27px; }
+  .card__photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 72px;
+    height: 72px;
+    border-radius: 36px;
+    -o-object-fit: cover;
+    object-fit: cover; }
+  .card__background {
+    display: block;
+    margin-bottom: 35px; }
+  .card__title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 31px; }
+  .card__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #777777;
+    max-width: 171px; }
+    .card__text b {
+      color: #000000; }
+
 @media screen and (max-width: 1200px) {
   .logo__img {
     width: 55px;
@@ -583,7 +639,15 @@ body {
   .row .col-30 {
     flex-basis: 27%; }
   .row .col-70 {
-    width: 73%; } }
+    width: 73%; }
+  .clients__heading {
+    font-size: 30px; }
+  .card__title {
+    font-size: 14px; }
+  .card__text {
+    font-size: 10px;
+    line-height: 20px;
+    max-width: 134px; } }
 
 @media screen and (max-width: 992px) {
   .logo__img {
@@ -608,12 +672,14 @@ body {
     margin-top: -370px; }
   .player__subtitle {
     font-size: 10px; }
-  .video__description {
-    font-size: 20px;
-    min-width: 200px; }
-  .video__show-all {
-    font-size: 14px;
-    margin-bottom: 14px; }
+  .video {
+    padding-bottom: 100px; }
+    .video__description {
+      font-size: 20px;
+      min-width: 200px; }
+    .video__show-all {
+      font-size: 14px;
+      margin-bottom: 14px; }
   .player__wrap {
     margin-bottom: 30px; }
   .player__icon {
@@ -628,9 +694,30 @@ body {
     .row .col-30 {
       flex-basis: 40%; }
     .row .col-70 {
-      width: 45%; } }
+      width: 45%; }
+  .clients {
+    padding-top: 100px;
+    padding-bottom: 110px; }
+    .clients__heading {
+      font-size: 26px; }
+    .clients__subheading {
+      font-size: 10px;
+      margin-bottom: 120px; }
+    .clients .row {
+      margin-left: 10%; }
+  .card {
+    margin-bottom: 80px;
+    width: 35%; }
+    .card__title {
+      font-size: 14px; }
+    .card__text {
+      font-size: 10px;
+      line-height: 20px;
+      max-width: 134px; } }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding-top: 50px; }
   .hero {
     padding-bottom: 250px; }
   .video {
@@ -660,7 +747,18 @@ body {
       .row .col-30__wrap {
         margin: auto; }
     .row .col-70 {
-      width: 70%; } }
+      width: 70%; }
+  .clients {
+    padding-top: 70px;
+    padding-bottom: 90px; }
+    .clients__heading {
+      font-size: 24px; }
+    .clients__subheading {
+      margin-bottom: 90px; }
+    .clients .row {
+      justify-content: space-between; }
+  .card {
+    margin-bottom: 80px; } }
 
 @media screen and (max-width: 575px) {
   .logo__img {
@@ -700,4 +798,23 @@ body {
     .row .col-30 {
       flex-basis: 80%; }
     .row .col-70 {
-      width: 100%; } }
+      width: 100%; }
+  .clients {
+    padding-top: 70px;
+    padding-bottom: 90px; }
+    .clients__heading {
+      font-size: 18px; }
+    .clients__subheading {
+      margin-bottom: 90px; }
+    .clients .row {
+      flex-direction: column;
+      align-items: center; }
+  .card {
+    margin-bottom: 50px;
+    width: 55%; }
+    .card__title {
+      font-size: 14px; }
+    .card__text {
+      font-size: 10px;
+      line-height: 20px;
+      max-width: 134px; } }

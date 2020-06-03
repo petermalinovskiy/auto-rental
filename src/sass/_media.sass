@@ -42,7 +42,19 @@
     .col-30
       flex-basis: 27%
     .col-70
-      width: 73%      
+      width: 73%  
+  //clients
+  .clients
+    &__heading
+      font-size: 30px  
+  .card 
+    &__title 
+      font-size: 14px
+    &__text
+      font-size: 10px
+      line-height: 20px
+      max-width: 134px 
+
 
 @media screen and ( max-width: 992px )
   //header
@@ -73,6 +85,7 @@
     &__subtitle
       font-size: 10px 
   .video     
+    padding-bottom: 100px 
     &__description
       font-size: 20px
       min-width: 200px
@@ -94,9 +107,32 @@
     .col-30
       flex-basis: 40%
     .col-70
-      width: 45%          
+      width: 45%   
+  //clients
+  .clients
+    padding-top: 100px
+    padding-bottom: 110px
+    &__heading
+      font-size: 26px  
+    &__subheading
+      font-size: 10px
+      margin-bottom: 120px
+    .row
+      margin-left: 10%  
+  .card 
+    margin-bottom: 80px
+    width: 35%
+    &__title 
+      font-size: 14px
+    &__text
+      font-size: 10px
+      line-height: 20px
+      max-width: 134px     
 
 @media screen and ( max-width: 768px )
+  //header
+  .header
+    padding-top: 50px 
   //hero
   .hero
     padding-bottom: 250px
@@ -131,6 +167,19 @@
         margin: auto
     .col-70
       width: 70% 
+  //clients
+  .clients
+    padding-top: 70px
+    padding-bottom: 90px
+    &__heading
+      font-size: 24px  
+    &__subheading
+      margin-bottom: 90px
+    .row
+      justify-content: space-between 
+  .card 
+    margin-bottom: 80px
+
 
 @media screen and ( max-width: 575px )  
   //header
@@ -176,4 +225,25 @@
     .col-30
       flex-basis: 80%
     .col-70
-      width: 100% 
+      width: 100%
+  //clients
+  .clients
+    padding-top: 70px
+    padding-bottom: 90px
+    &__heading
+      font-size: 18px  
+    &__subheading
+      margin-bottom: 90px
+    .row
+      flex-direction: column 
+      align-items: center 
+  .card 
+    margin-bottom: 50px 
+    width: 55%
+    &__title 
+      font-size: 14px
+    &__text
+      font-size: 10px
+      line-height: 20px
+      max-width: 134px  
+ 
